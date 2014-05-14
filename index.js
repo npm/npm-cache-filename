@@ -9,7 +9,10 @@ function cf(root, u) {
 
   u = url.parse(u);;
   var h = u.host.replace(/:/g, '_');;
-  var p = [root, h].concat(u.path.split('/').slice(1).map(function(part) {
+  // Strip off any /-rev/... or ?rev=... bits
+  var revre = /(\?rev=|\?.*?&rev=|\/-rev\/).*$/
+  var parts = u.path.replace(revre, '').split('/').slice(1)
+  var p = [root, h].concat(parts.map(function(part) {
     return encodeURIComponent(part).replace(/%/g, '_');;
   }));;
 
