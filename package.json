@@ -1,6 +1,6 @@
 {
   "name": "npm-cache-filename",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Given a cache folder and url, return the appropriate cache folder.",
   "main": "index.js",
   "dependencies": {},
