@@ -6,6 +6,8 @@ This is a fork of [npm-cache-filename][], updated to see the difference between 
 
 Given a cache folder and url, return the appropriate cache folder.
 
+[npm-cache-filename]: https://www.npmjs.com/package/npm-cache-filename
+
 ## USAGE
 
 ```javascript
