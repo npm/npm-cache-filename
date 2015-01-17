@@ -12,6 +12,9 @@ function cf(root, u) {
   // Strip off any /-rev/... or ?rev=... bits
   var revre = /(\?rev=|\?.*?&rev=|\/-rev\/).*$/;;
   var parts = u.path.replace(revre, '').split('/').slice(1);;
+  // Make sure different git references get different folders
+  var hash;;
+  if (u.hash && (hash = u.hash.slice(1))) parts.push(hash);;
   var p = [root, h].concat(parts.map(function(part) {
     return encodeURIComponent(part).replace(/%/g, '_');;
   }));;
