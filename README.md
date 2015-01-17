@@ -1,3 +1,5 @@
+ [![Build status](https://img.shields.io/travis/tomekwi/napa-cache-filename.svg?style=flat-square)](https://travis-ci.org/tomekwi/napa-cache-filename)
+
 # napa-cache-filename
 
 This is a fork of [npm-cache-filename][], updated to see the difference between different references. It creates different folders for `https://github.com/tomekwi/napa-cache-filename#v1.0.0` and `...#v1.1.0`.
