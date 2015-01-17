@@ -2,7 +2,9 @@
 
 # napa-cache-filename
 
-This is a fork of [npm-cache-filename][], updated to see the difference between different references. It creates different folders for `https://github.com/tomekwi/napa-cache-filename#v1.0.0` and `...#v1.1.0`.
+This is a fork of [npm-cache-filename][], updated to create different folders for different references – as in `https://github.com/tomekwi/napa-cache-filename#v1.1.0` and `...#v1.1.1`.
+
+---
 
 Given a cache folder and url, return the appropriate cache folder.
 
