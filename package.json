@@ -1,6 +1,6 @@
 {
   "name": "napa-cache-filename",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Given a cache folder and url, return the appropriate cache folder.",
   "main": "index.js",
   "dependencies": {},
