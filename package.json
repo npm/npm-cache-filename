@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/npm/npm-cache-filename"
+    "url": "git://github.com/tomekwi/napa-cache-filename"
   },
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
   "contributors": ["Tomek Wiszniewski <t.wiszniewski@gmail.com>"],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/npm/npm-cache-filename/issues"
+    "url": "https://github.com/tomekwi/napa-cache-filename/issues"
   },
-  "homepage": "https://github.com/npm/npm-cache-filename"
+  "homepage": "https://github.com/tomekwi/napa-cache-filename"
 }
