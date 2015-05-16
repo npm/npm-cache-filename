@@ -17,5 +17,11 @@ test('it does the thing it says it does', function(t) {
           '/tmp/foo_134/xyz')
   t.equal(cf("/tmp", "https://foo:134/xyz-rev/baz"),
           '/tmp/foo_134/xyz-rev/baz')
+
+  t.equal(cf("/tmp", "https://registry.npmjs.org/JSONStream"),
+          '/tmp/registry.npmjs.org/JSONStream_50850eed')
+  t.equal(cf("/tmp", "https://registry.npmjs.org/jsonstream"),
+          '/tmp/registry.npmjs.org/jsonstream')
+
   t.end();
 });;
