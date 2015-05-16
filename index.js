@@ -1,5 +1,7 @@
 var url = require('url');;
 var path = require('path');;
+var crypto = require('crypto');;
+var caseUniquify = require('case-uniquify');;
 
 module.exports = cf;;
 
@@ -13,6 +15,7 @@ function cf(root, u) {
   var revre = /(\?rev=|\?.*?&rev=|\/-rev\/).*$/;;
   var parts = u.path.replace(revre, '').split('/').slice(1);;
   var p = [root, h].concat(parts.map(function(part) {
+    part = caseUniquify(part)
     return encodeURIComponent(part).replace(/%/g, '_');;
   }));;
 
